@@ -10,6 +10,7 @@ import UIKit
 struct Book {
 	let title: String
 	let author: String
+	var review: String?
 	
 	// computed property - if there is a photo of a book, use it, otherwise use the first letter of the book as an image
 	var image: UIImage {

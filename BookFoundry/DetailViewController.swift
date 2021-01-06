@@ -4,12 +4,13 @@ import UIKit
 This class represents the Detail View Controller in IB. Every view controller (or screen) needs a corresponding
 class that implements the UIViewController protocol
 */
-class DetailViewController: UIViewController {
+class DetailViewController: UITableViewController {
 	let book: Book
 	
 	@IBOutlet var titleLable: UILabel!
 	@IBOutlet var authorLabel: UILabel!
 	@IBOutlet var imageView: UIImageView!
+	@IBOutlet var reviewTextView: UITextView!
 	
 	@IBAction func updateImage() {
 		let imagePicker = UIImagePickerController()
@@ -23,8 +24,15 @@ class DetailViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		imageView.image = book.image
+		imageView.layer.cornerRadius = 16
 		titleLable.text = book.title
 		authorLabel.text = book.author
+		
+		if let review = book.review {
+			reviewTextView.text = review
+		}
+		
+		reviewTextView.addDoneButton()
 	}
 	
 	// I don't understand this :S
@@ -59,3 +67,23 @@ extension DetailViewController: UIImagePickerControllerDelegate, UINavigationCon
 }
 
 // We need to ask for permission for the app to access the photo library or camera. This is done in Info.plist
+
+// Tells this view controller it is a UITextViewDelegate. This helps with dismissing the keyboard
+extension DetailViewController: UITextViewDelegate {
+	func textViewDidEndEditing(_ textView: UITextView) {
+		textView.resignFirstResponder()
+	}
+}
+
+extension UITextView {
+	func addDoneButton(){
+		let toolbar = UIToolbar()
+		toolbar.sizeToFit()
+		
+		let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+		let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.resignFirstResponder))
+		
+		toolbar.items = [flexSpace, doneButton]
+		self.inputAccessoryView = toolbar
+	}
+}
