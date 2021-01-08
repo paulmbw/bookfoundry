@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D5F3ABE25A6433C00C0DA46 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F3ABD25A6433C00C0DA46 /* BookCell.swift */; };
 		9D5F3AC625A6701800C0DA46 /* AddNewBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D5F3AC525A6701800C0DA46 /* AddNewBook.swift */; };
+		9DB9CEAE25A8E18100042BB6 /* LibraryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB9CEAD25A8E18100042BB6 /* LibraryHeaderView.xib */; };
 		9DED8D7025A4D9D0000F5A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED8D6F25A4D9D0000F5A5E /* AppDelegate.swift */; };
 		9DED8D7225A4D9D0000F5A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED8D7125A4D9D0000F5A5E /* SceneDelegate.swift */; };
 		9DED8D7425A4D9D0000F5A5E /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DED8D7325A4D9D0000F5A5E /* LibraryViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		9D5F3ABD25A6433C00C0DA46 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
 		9D5F3AC525A6701800C0DA46 /* AddNewBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBook.swift; sourceTree = "<group>"; };
+		9DB9CEAD25A8E18100042BB6 /* LibraryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryHeaderView.xib; sourceTree = "<group>"; };
 		9DED8D6C25A4D9D0000F5A5E /* BookFoundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookFoundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DED8D6F25A4D9D0000F5A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DED8D7125A4D9D0000F5A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				9DED8D6F25A4D9D0000F5A5E /* AppDelegate.swift */,
 				9DED8D7125A4D9D0000F5A5E /* SceneDelegate.swift */,
 				9DED8D7325A4D9D0000F5A5E /* LibraryViewController.swift */,
+				9DB9CEAD25A8E18100042BB6 /* LibraryHeaderView.xib */,
 				9DED8D7525A4D9D0000F5A5E /* Main.storyboard */,
 				9D5F3ABD25A6433C00C0DA46 /* BookCell.swift */,
 				9DED8D8D25A4E5CF000F5A5E /* DetailViewController.swift */,
@@ -142,6 +145,7 @@
 				9DED8D7C25A4D9D2000F5A5E /* LaunchScreen.storyboard in Resources */,
 				9DED8D7925A4D9D2000F5A5E /* Assets.xcassets in Resources */,
 				9DED8D7725A4D9D0000F5A5E /* Main.storyboard in Resources */,
+				9DB9CEAE25A8E18100042BB6 /* LibraryHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
